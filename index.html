@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Castles the Card Game</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="content">
+			<div class="header">
+				<h1>Castles</h1>
+			</div>
+			<div class="instruction" id="intro">
+				<div class="banner">
+					<h1>Introduction</h1>
+				</div>
+				
+				<p>Castles is a 2 player strategy memory game that can be played using any standard playing deck of cards.</p>
+			</div>
+			<div class="instruction" id="aim">
+				<div class="banner">
+					<h1>Aim of the Game</h1>
+				</div>
+				<p>The aim of the game is to break into the castle of the other player and assassinate their chosen reigning monarch.</p>
+			</div>
+			<div class="instruction" id="setup">
+				<div class="banner">
+					<h1>Set Up</h1>
+				</div>
+				<ol>
+					<li>Choose which player will play as the red cards and which will play as the black cards.</li>
+					<li>Remove from the deck 2 x Queens, 2 x Kings and 2 x Jacks (one of each colour).</li>
+					<li>Deal all remaining cards to the players, separated by their chosen colours.</li>
+					<li>Each player chooses if their castle is ruled by a King or a Queen.</li>
+					<li>Discard either the King or Queen (whichever was not chosen to be the reigning monarch).</li>
+					<li>Place the chosen King/Queen and Joker cards face down in front of the player.</li>
+					<li>Each player builds 2 x 3 card walls face down in front of their King/Queen and Joker (the Jack has to be used in one of the walls).</li>
+					<li>All other cards go into the players hand for attack or defense.</li>
+					<li>Each player should have their own discard pile for discarding cards after taking their turn.</li>
+				</ol>
+				<div class="gridSetUp">
+					<div><img class="cardRow" src="CardRow3Inv.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow2Inv.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow1.png" alt="Card"/></div>
+					<div class="emptyRow"></div>
+					<div><img class="cardRow" src="CardRow1.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow2.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow3.png" alt="Card"/></div>
+				</div>
+			</div>
+			<div class="instruction" id="turn">
+				<div class="banner">
+					<h1>Taking a Turn</h1>
+				</div>
+				<p>Once the game is ready to begin the players will each take a turn either attacking or defending. A player can only either attack or defend in one turn, not both.</p>
+				
+				<h2>Attacking</h2>
+				<p>To attack, a player selects a card from their hand and places it face up in front of the wall segment that they would like to break down. The selected wall segment card is then turned face up and the card values are compared.</p>
+				<p>If the attacking card is of equal or greater value then the wall segment then that segment of the wall is broken.</p>
+				<p>If the attacking card is of less value then the wall segment remains and is again turned face down.</p>
+				<p>Any used attack cards or broken wall segments should then be discarded to the relevant players discard pile.</p>
+				
+				<p>NOTE: As the Jack is a royal knight it can only be defeated by using one of the available 2 x Assassin cards.</p>
+				
+				<div class="gridSetUp">
+					<div><img class="cardRow" src="CardRow4Attack.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow1Attack.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow2.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow3.png" alt="Card"/></div>
+				</div>
+				
+				<h2>Defense</h2>
+				<p>If a wall segment is broken the defending player can choose to repair that wall ONCE using a card from their hand. The selected repair card should be placed face down horizontal in place of the broken wall segment. Once a repaired wall is broken it cannot be again repaired.</p>
+				
+				<div class="gridSetUp">
+					<div><img class="cardRow" src="CardRow1Defense.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow2.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow3.png" alt="Card"/></div>
+				</div>
+			</div>
+			<div class="instruction" id="end">
+				<div class="banner">
+					<h1>Ending the Game</h1>
+				</div>
+				<p>The game ends either when the opposing players monarch is assassinated or all turn cards have been discarded leading to single combat.</p>
+				
+				<h2>Assassination</h2>
+				<p>Only the Assassin cards can be used to kill a Joker, Jack, Queen or King. In order to attempt an assassination on the opposing players monarch a path must first be broken through both defending walls. Once a hole is open a player can then use an Assassin card to attempt an assassination.</p>
+				<p>Similar to attacking a wall segment the Assassin is placed upon the card that the attacker would like to assassinate. The selected card is then turned face up and if it is the remaining monarch the game is over.</p>
+				<p>If the selected card is the Joker then both the Joker and Assassin card are discarded and the game continues.</p>
+				
+				<div class="gridSetUp">
+					<div><img class="cardRow" src="CardRow4Assassinate.png" alt="Card"/></div>
+					<div><img class="cardRow" src="CardRow3Assassinate.png" alt="Card"/></div>
+				</div>
+				
+				<h2>Single Combat</h2>
+				<p>In the event that both players have finished all oftheir turns without assassinating the opposing monarch they then need to choose a champion and the game will be settled by Single Combat.</p>
+				<p>In order to select a champion both players turn their discard piles face down and shuffle them. They then select the top 3 x cards from the pile and lay them opposite the other players 3 x cards. Each card is then turned over in order and the card with the higher value wins each encounter, with the best of the 3 encounters winning overall.</p>
+				<p>If at the end of the 3 encounters there is a draw then a ceasefire is called and both players retire to tend to their wounded.</p>
+				
+				<div class="gridSetUp">
+					<div><img class="cardRow" src="SingleCombatBlack.png" alt="Card"/></div>
+					<div><img class="cardRow" src="SingleCombatRed.png" alt="Card"/></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<footer>
+	</footer>
+</html>
